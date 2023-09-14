@@ -24,7 +24,15 @@ observeDOM(document.body, function(m){
     if (document.body.contains(document.querySelector('.blockMessage'))) {
         const overlayContent = document.querySelector('.blockMessage');
         if (overlayContent.innerHTML.toUpperCase().includes('BROWSER CONSOLE')) {
-            window.location.reload()
+            // if url ends with post-thread
+            if (window.location.href.endsWith('post-thread')) {
+                window.location.href = window.location.href.replace('post-thread', '')
+            } else if (window.location.href.endsWith('post-thread/')) {
+                window.location.href = window.location.href.replace('post-thread/', '')
+            }
+            else {
+                window.location.reload()
+            }
         }
     }
 })
