@@ -5,6 +5,11 @@
       "matches": ["https://hypixel.net/*"]
     }
   ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "hypixel-oops-fix@1.0.0"
+    }
+  },
   "manifest_version": 3,
   "name": "Hypixel Oops Fix",
   "version": "1.0.0"
