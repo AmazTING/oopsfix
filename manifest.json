@@ -1,0 +1,11 @@
+{
+  "content_scripts": [
+    {
+      "js": ["oopsfix.js"],
+      "matches": ["https://hypixel.net/*"]
+    }
+  ],
+  "manifest_version": 3,
+  "name": "Hypixel Oops Fix",
+  "version": "1.0.0"
+}
